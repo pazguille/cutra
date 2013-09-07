@@ -1,4 +1,3 @@
-sinatra-site
-============
+# sinatra-app
 
-My personal website using Sinatra.
+My first app using Sinatra
