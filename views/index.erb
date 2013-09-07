@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Cutra: A tiny url shortener</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="description" content="A tiny url shortener">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+        <meta http-equiv="cleartype" content="on">
+        <meta name="HandheldFriendly" content="True">
+        <link rel="icon" href="src/favicon.ico">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/app.css">
+    </head>
+    <body>
+        <h1>cutra</h1>
+        <p>url shortener</p>
+
+        <form method="post" action="/">
+            <input type="text" value="<%= CGI.escapeHTML(params[:url]) %>" placeholder="Long URL here" name="url" id="url" />
+            <input type="submit" value="cut!" id="submit" />
+        </form>
+
+        <% if @code %>
+        <div class="result">
+            Your shortened URL is:
+            <a href="http://localhost:8080/<%= @code %>">http://localhost:8080/<%= @code %></a>
+        </div>
+        <% end %>
+
+    </body>
+</html>
