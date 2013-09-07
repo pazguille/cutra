@@ -1,3 +1,3 @@
-# sinatra-app
+# cutra
 
-My first app using Sinatra
+My first app using Sinatra to cut urls
