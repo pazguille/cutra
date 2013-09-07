@@ -1,12 +1,14 @@
 require 'sinatra'
 require 'redis'
-require 'cgi'
 
 # Creates a new instance of Redis
 redis = Redis.new
 
 # Define Sinatra helpers
 helpers do
+  include Rack::Utils
+  alias_method :h, :escape_html
+
   def random_str(length)
     rand(36**length).to_s(36)
   end

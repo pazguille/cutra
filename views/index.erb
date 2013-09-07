@@ -17,8 +17,9 @@
         <p>url shortener</p>
 
         <form method="post" action="/">
-            <input type="text" value="<%= CGI.escapeHTML(params[:url]) %>" placeholder="Long URL here" name="url" id="url" />
-            <input type="submit" value="cut!" id="submit" />
+            <%= h(params[:url]) %>
+            <input type="text" value="<%= h(params[:url]) %>" placeholder="Long URL here" name="url" id="url">
+            <input type="submit" value="cut!" id="submit">
         </form>
 
         <% if @code %>
