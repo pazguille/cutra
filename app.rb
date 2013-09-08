@@ -1,3 +1,5 @@
+require 'rubygems'
+require 'sinatra'
 require 'redis'
 require 'bundler'
 Bundler.require
