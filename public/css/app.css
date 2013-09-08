@@ -45,3 +45,12 @@ form {
     color: #d35400;
     padding: 8px;
 }
+
+#github {
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 149px;
+    height: 149px;
+}
