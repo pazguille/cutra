@@ -1,5 +1,6 @@
-require 'sinatra'
 require 'redis'
+require 'bundler'
+Bundler.require
 
 # Creates a new instance of Redis
 redis = Redis.new
