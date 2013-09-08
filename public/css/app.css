@@ -37,13 +37,10 @@ form {
     border-top: 1px solid #ecf0f1;
     margin: 1em 0;
     padding: 1em 0;
-    text-align: center;
-    background-color: #fff;
 }
 
 .result a {
     font-size: 1.5em;
-    display: block;
     margin-top: 8px;
     color: #d35400;
     padding: 8px;
