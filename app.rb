@@ -1,9 +1,15 @@
-require 'redis'
 require 'bundler'
 Bundler.require
 
+configure do
+  require 'redis'
+  redisUri = ENV["REDISTOGO_URL"] || 'redis://localhost:6379'
+  uri = URI.parse(redisUri)
+  redis = Redis.new(:host => uri.host, :port => uri.port, :password => uri.password)
+end
+
 # Creates a new instance of Redis
-redis = Redis.new
+# redis = Redis.new
 
 # Define Sinatra helpers
 helpers do
