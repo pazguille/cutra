@@ -15,8 +15,8 @@ helpers do
 end
 
 # Configuration
-# set :environment, :production
-set :port, 8080
+set :environment, :production
+set :port, 80
 
 # Defines routes
 get '/' do
