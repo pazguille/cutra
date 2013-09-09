@@ -46,6 +46,17 @@ form {
     padding: 8px;
 }
 
+footer {
+    margin: 30px auto;
+    text-align: center;
+}
+
+.heart {
+    font-style: normal;
+    font-weight: 500;
+    color: #C0392B;
+}
+
 #github {
     display: inline-block;
     position: absolute;
